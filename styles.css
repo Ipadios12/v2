@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Resetează marginile, padding-ul și box-sizing pentru toate elementele */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(back.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+}
+/* Stilizează antetul. Are o lățime de 100%, o înălțime de 100vh (100% din înălțimea vizibilă a ferestrei), imagine de fundal cu dimensiune de acoperire și poziționare centrală. */
+
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  transition: all 0.5s ease;
+}
+/* Stilizează bara de navigație. Are o poziție fixă, o lățime de 100%, un container flexibil cu aliniere pe orizontală și spațiere egală între elemente, un padding de 25px și o tranziție de 0.5s pentru toate proprietățile. */
+
+.nav.active {
+  background: #fff;
+  padding: 25px;
+}
+.nav.active .logo,
+.nav.active a {
+  color: #000;
+}
+.nav.active a:hover {
+  background: #000;
+  color: #fff;
+}
+/* Stilizează bara de navigație când are clasa "active". Are un fundal alb, un padding de 25px, iar textul din logo și link-uri devine negru. Când se face hover pe link-uri, are un fundal negru și text alb. */
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff9900;
+  text-shadow: 2px -3px 4px rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.menu {
+  display: flex;
+  width: 745px;
+  font-size: 20px;
+}
+/* Stilizează meniul. Este un container flexibil cu o lățime de 745px și o dimensiune de font de 20px. */
+
+.menu li {
+  list-style: none;
+  margin: 10px;
+}
+/* Stilizează fiecare element <li> din meniu. Elimină stilul implicit al marcatorului și adaugă un margin de 10px. */
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+/* Stilizează link-urile din meniu. Au culoare albă, fără subliniere și o greutate de font bold. Au o tranziție de 0.2s pentru toate proprietățile. */
+
+.menu li a:hover {
+  padding: 5px 10px;
+  background: #fff;
+  color: #000;
+  border-radius: 15px;
+}
+/* /* Stilizează link-urile când se face hover pe ele. Adaugă un padding de 5px înălțime și 10px lă */
+
+.scrol {
+  height: 100px;
+}
+/* Stilizează clasa .scrol. Setează înălțimea la 100px. */
+
+.action_btn {
+  background-color: orange;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 17px;
+}
+/* Stilizează butonul cu clasa .action_btn. Setează culoarea de fundal la orange, culoarea textului la alb, un padding de 0.5rem înălțime și 1rem lățime, fără bordură, fără contur, un border-radius de 20px, o dimensiune de font de 0.8rem și greutate de font bold. Cursorul devine pointer și nu are subliniere. Are o tranziție de 0.2s pentru toate proprietățile și o dimensiune de font de 17px. */
+
+.action_btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+/* Stilizează butonul când se face hover pe el. Aplică o scalare la 1.05 pentru a crea un efect de mărire. Culoarea textului devine alb. */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent;
+}
+/* Stilizează containerul cu clasa .contact-container. Este un container flexibil cu aliniere pe orizontală și verticală în centru. Are o înălțime de 100vh (100% din înălțimea vizibilă a ferestrei) și un fundal transparent. */
+
+.contact-container div {
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* Stilizează div-urile din containerul .contact-container. Textul are culoarea albă, un border-radius de 10px, aliniere centrală și o lățime maximă de 400px. Marginul este setat automat pe orizontală pentru a centra div-urile. */
+
+.contact-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* Stilizează titlurile <h2> din .contact-container. Au o dimensiune de font de 20px și un margin-bottom de 10px. */
+
+.contact-container p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+/* Stilizează paragrafele din .contact-container. Au o dimensiune de font de 16px și un margin-bottom de 5px. */
+
+@media (max-width: 480px) {
+  .contact-container div {
+    max-width: 90%;
+  }
+}
+/* Media query pentru ecrane cu lățime maximă de 480px. Redimensionează lățimea maximă a div-urilor din .contact-container la 90%. */

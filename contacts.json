@@ -1,0 +1,14 @@
+{
+  "contacts": [
+    {
+      "name": "Valentin Constantinescu",
+      "email": "constantinescuvx@icloud.com",
+      "phone": "1234567890"
+    },
+    {
+      "name": "Vaida Aurel",
+      "email": "janesmith@example.com",
+      "phone": "9876543210"
+    }
+  ]
+}
