@@ -1,2 +1,1 @@
-# v2
-Quiz-Game v2
+https://ipadios12.github.io/v2/index.html
